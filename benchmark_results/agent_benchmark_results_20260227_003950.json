@@ -1,0 +1,69 @@
+{
+  "system_info": {
+    "timestamp": "2026-02-27T00:39:31.967049",
+    "platform": "macOS-26.3-arm64-arm-64bit",
+    "python_version": "3.8.19",
+    "cpu_count": 8
+  },
+  "config": {
+    "data_dir": "/Users/roastedbeans/Documents/Github/modi-project/ai-detection/csv_spec",
+    "num_files": 52,
+    "num_rows": 19932,
+    "num_inference_runs": 5
+  },
+  "accuracy": {
+    "tp": 45,
+    "tn": 7,
+    "fp": 0,
+    "fn": 0,
+    "total": 52,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "inference_time": {
+    "avg_time_ms": 3.291625457692337,
+    "std_time_ms": 6.2828488022418645,
+    "min_time_ms": 0.20258300000008944,
+    "max_time_ms": 35.053583999999915,
+    "p50_time_ms": 1.8642909999995183,
+    "p95_time_ms": 15.22616699999979,
+    "p99_time_ms": 34.43854200000018,
+    "per_sample_avg_ms": 3.291625457692337,
+    "batch_avg_ms": 244.07528339999993,
+    "batch_std_ms": 84.48327829650798
+  },
+  "full_pipeline_time": {
+    "avg_time_ms": 1128.1001831999997,
+    "std_time_ms": 248.25998990127272,
+    "min_time_ms": 680.8506250000015,
+    "max_time_ms": 1335.4675419999999
+  },
+  "memory_usage": {
+    "model_memory_mb": 0.0,
+    "peak_cpu_memory_mb": 1.1543645858764648,
+    "current_cpu_memory_mb": 0.0235595703125
+  },
+  "attack_detection": {
+    "samples_tested": 10,
+    "avg_detection_time_ms": 9.020783299999735,
+    "std_detection_time_ms": 3.7944536647648954,
+    "min_detection_time_ms": 4.807207999999008,
+    "max_detection_time_ms": 18.835875000000613,
+    "p95_detection_time_ms": 18.835875000000613,
+    "p99_detection_time_ms": 18.835875000000613,
+    "attacks_detected": 10,
+    "detection_rate": 1.0,
+    "attack_types_tested": [
+      "auth",
+      "authentication",
+      "detach",
+      "attach",
+      "downgrade",
+      "capability",
+      "emm"
+    ]
+  },
+  "throughput_rows_per_sec": 81663.32830733489
+}

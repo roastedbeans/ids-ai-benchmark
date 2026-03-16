@@ -1,0 +1,127 @@
+version: '3.8'
+
+services:
+  # Detection Agent benchmark (spec-based IDS BR-1 to BR-43)
+  agent-benchmark:
+    build:
+      context: .
+      dockerfile: Dockerfile.agent
+    container_name: detection-agent-benchmark
+    volumes:
+      - ./csv_spec:/app/csv_spec:ro
+      - ./benchmark_results:/app/benchmark_results:rw
+    working_dir: /app
+    command: ["--data-dir", "csv_spec", "--output-dir", "benchmark_results", "--num-runs", "100"]
+
+  fbs-benchmark:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fbs-android-benchmark
+
+    # Resource constraints to simulate Android device
+    # 8GB RAM and 8 CPU cores as specified
+    deploy:
+      resources:
+        limits:
+          cpus: '8'
+          memory: 8G
+        reservations:
+          cpus: '4'
+          memory: 4G
+
+    # For Docker Compose v2 without swarm mode, use these instead:
+    mem_limit: 8g
+    mem_reservation: 4g
+    cpus: 8
+
+    # Mount volumes for data and results
+    volumes:
+      - ./dataset:/app/dataset:ro
+      - ./notebooks:/app/notebooks:ro
+      - ./benchmark_results:/app/benchmark_results:rw
+
+    # Environment variables
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OMP_NUM_THREADS=8
+      - MKL_NUM_THREADS=8
+      - NUMEXPR_NUM_THREADS=8
+      - OPENBLAS_NUM_THREADS=8
+      # Limit PyTorch threads to simulate mobile constraints
+      - TORCH_NUM_THREADS=8
+
+    # Network mode
+    network_mode: bridge
+
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # Alternative service with more restrictive constraints (typical mid-range Android)
+  fbs-benchmark-constrained:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fbs-android-benchmark-constrained
+
+    # More restrictive: 4GB RAM and 4 CPU cores (typical mid-range phone)
+    mem_limit: 4g
+    mem_reservation: 2g
+    cpus: 4
+
+    volumes:
+      - ./dataset:/app/dataset:ro
+      - ./notebooks:/app/notebooks:ro
+      - ./benchmark_results:/app/benchmark_results:rw
+
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OMP_NUM_THREADS=4
+      - MKL_NUM_THREADS=4
+      - NUMEXPR_NUM_THREADS=4
+      - OPENBLAS_NUM_THREADS=4
+      - TORCH_NUM_THREADS=4
+
+    network_mode: bridge
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # Low-end device simulation (2GB RAM, 2 cores)
+  fbs-benchmark-lowend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fbs-android-benchmark-lowend
+
+    mem_limit: 2g
+    mem_reservation: 1g
+    cpus: 2
+
+    volumes:
+      - ./dataset:/app/dataset:ro
+      - ./notebooks:/app/notebooks:ro
+      - ./benchmark_results:/app/benchmark_results:rw
+
+    environment:
+      - PYTHONUNBUFFERED=1
+      - OMP_NUM_THREADS=2
+      - MKL_NUM_THREADS=2
+      - NUMEXPR_NUM_THREADS=2
+      - OPENBLAS_NUM_THREADS=2
+      - TORCH_NUM_THREADS=2
+
+    network_mode: bridge
+
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

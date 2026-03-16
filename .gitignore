@@ -1,0 +1,36 @@
+# Data files
+data/*.npy
+data/*.json
+
+dataset/
+
+# Model files
+models/*.pth
+models/*.pkl
+
+# Results and logs
+results/*.png
+results/*.pkl
+results/*.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak

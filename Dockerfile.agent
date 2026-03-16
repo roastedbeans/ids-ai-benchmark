@@ -1,0 +1,13 @@
+# Lightweight image for detection_agent benchmark (no PyTorch)
+FROM python:3.10-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+# detection_agent uses only stdlib (csv, glob, json, etc.)
+COPY detection_agent.py .
+COPY benchmark_agent.py .
+
+ENTRYPOINT ["python", "benchmark_agent.py"]

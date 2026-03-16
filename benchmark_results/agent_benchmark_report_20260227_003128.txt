@@ -1,0 +1,49 @@
+================================================================================
+DETECTION AGENT BENCHMARK REPORT
+Overhead Computation & Memory Analysis
+================================================================================
+
+SYSTEM INFORMATION
+----------------------------------------
+Timestamp: 2026-02-27T00:31:16.087165
+Platform: macOS-26.3-arm64-arm-64bit
+Python: 3.8.19
+CPU Count: 8
+
+CONFIGURATION
+----------------------------------------
+Data Dir: /Users/roastedbeans/Documents/Github/modi-project/ai-detection/csv_spec
+Files: 52  Rows: 19932
+Inference Runs: 5
+
+ACCURACY
+----------------------------------------
+TP=45  TN=7  FP=0  FN=0  (total=52)
+Accuracy: 100.0%  Precision: 100.0%  Recall: 100.0%  F1: 100.0%
+
+INFERENCE TIME (Computation Overhead)
+----------------------------------------
+  Average: 615.8288 ms
+  Std Dev: 43.4397 ms
+  Min: 581.3060 ms
+  Max: 699.7045 ms
+  P50: 602.5770 ms
+  P95: 699.7045 ms
+  P99: 699.7045 ms
+  Throughput: 32366 rows/sec
+
+MEMORY USAGE
+----------------------------------------
+  Peak CPU Memory: 79.6652 MB
+
+ATTACK DETECTION (Real Dataset)
+----------------------------------------
+  Samples Tested: 10
+  Average Detection Time: 8.5305 ms
+  P95 Detection Time: 15.4746 ms
+  Attacks Detected: 10/10
+  Detection Rate: 1.0000
+
+================================================================================
+END OF REPORT
+================================================================================

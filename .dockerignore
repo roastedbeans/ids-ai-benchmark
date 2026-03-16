@@ -1,0 +1,49 @@
+# Docker ignore file for FBS Detection benchmark
+
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info
+.eggs
+*.egg
+.pytest_cache
+.mypy_cache
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# Virtual environments
+venv
+env
+.venv
+.env
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Results (we mount these as volumes)
+benchmark_results
+
+# Large files we don't need in Docker context
+# (models are mounted as volumes)
+*.pte
+
+# Temporary files
+*.tmp
+*.temp
+*.log

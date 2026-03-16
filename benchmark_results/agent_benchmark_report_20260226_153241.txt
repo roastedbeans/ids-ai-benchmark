@@ -1,0 +1,49 @@
+================================================================================
+DETECTION AGENT BENCHMARK REPORT
+Overhead Computation & Memory Analysis
+================================================================================
+
+SYSTEM INFORMATION
+----------------------------------------
+Timestamp: 2026-02-26T15:31:39.065182
+Platform: Linux-6.10.14-linuxkit-aarch64-with-glibc2.41
+Python: 3.10.19
+CPU Count: 8
+
+CONFIGURATION
+----------------------------------------
+Data Dir: /app/csv_spec
+Files: 52  Rows: 19932
+Inference Runs: 100
+
+ACCURACY
+----------------------------------------
+TP=45  TN=7  FP=0  FN=0  (total=52)
+Accuracy: 100.0%  Precision: 100.0%  Recall: 100.0%  F1: 100.0%
+
+INFERENCE TIME (Computation Overhead)
+----------------------------------------
+  Average: 531.8895 ms
+  Std Dev: 42.7550 ms
+  Min: 493.3421 ms
+  Max: 802.8925 ms
+  P50: 518.1353 ms
+  P95: 612.6287 ms
+  P99: 802.8925 ms
+  Throughput: 37474 rows/sec
+
+MEMORY USAGE
+----------------------------------------
+  Peak CPU Memory: 79.6666 MB
+
+ATTACK DETECTION (Real Dataset)
+----------------------------------------
+  Samples Tested: 45
+  Average Detection Time: 12.2840 ms
+  P95 Detection Time: 62.0349 ms
+  Attacks Detected: 45/45
+  Detection Rate: 1.0000
+
+================================================================================
+END OF REPORT
+================================================================================

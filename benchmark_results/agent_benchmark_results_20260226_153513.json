@@ -1,0 +1,77 @@
+{
+  "system_info": {
+    "timestamp": "2026-02-26T15:34:14.074096",
+    "platform": "Linux-6.10.14-linuxkit-aarch64-with-glibc2.41",
+    "python_version": "3.10.19",
+    "cpu_count": 8
+  },
+  "config": {
+    "data_dir": "/app/csv_spec",
+    "num_files": 52,
+    "num_rows": 19932,
+    "num_inference_runs": 100
+  },
+  "accuracy": {
+    "tp": 45,
+    "tn": 7,
+    "fp": 0,
+    "fn": 0,
+    "total": 52,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "inference_time": {
+    "avg_time_ms": 514.2556169300063,
+    "std_time_ms": 27.06892821593289,
+    "min_time_ms": 493.8065420000157,
+    "max_time_ms": 677.9417089999242,
+    "p50_time_ms": 508.37225099996886,
+    "p95_time_ms": 558.6987919999729,
+    "p99_time_ms": 677.9417089999242
+  },
+  "memory_usage": {
+    "model_memory_mb": 0.0,
+    "peak_cpu_memory_mb": 79.66648769378662,
+    "current_cpu_memory_mb": 0.026640892028808594
+  },
+  "attack_detection": {
+    "samples_tested": 45,
+    "avg_detection_time_ms": 11.404561088890356,
+    "std_detection_time_ms": 19.415544093156473,
+    "min_detection_time_ms": 0.9378749999768843,
+    "max_detection_time_ms": 97.14004199997817,
+    "p95_detection_time_ms": 61.01408300003186,
+    "p99_detection_time_ms": 97.14004199997817,
+    "attacks_detected": 45,
+    "detection_rate": 1.0,
+    "attack_types_tested": [
+      "stealthy",
+      "auth",
+      "replay",
+      "paging",
+      "attach",
+      "imsi",
+      "malformed",
+      "null",
+      "service",
+      "detach",
+      "rrc",
+      "panic",
+      "authentication",
+      "energy",
+      "capability",
+      "handover",
+      "imei",
+      "location",
+      "emm",
+      "lullaby",
+      "no",
+      "sib1",
+      "downgrade",
+      "tau"
+    ]
+  },
+  "throughput_rows_per_sec": 38758.934941711836
+}
