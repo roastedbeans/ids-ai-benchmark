@@ -1,0 +1,12 @@
+{
+  "model": "LightGBM",
+  "train_time_sec": 0.23817724999935308,
+  "inference_batch_sec": 0.002524169000025722,
+  "inference_ms_per_sample": 0.002399400190138519,
+  "accuracy": 0.9096958174904943,
+  "precision_macro": 0.909804347826087,
+  "recall_macro": 0.9093371695347701,
+  "f1_macro": 0.9095302798369481,
+  "roc_auc": 0.9567269239816876,
+  "mcc": 0.819141384138716
+}

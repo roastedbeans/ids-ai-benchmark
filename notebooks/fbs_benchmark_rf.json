@@ -1,0 +1,12 @@
+{
+  "model": "Random Forest",
+  "train_time_sec": 0.2092560559995036,
+  "inference_batch_sec": 0.042853487000684254,
+  "inference_ms_per_sample": 0.040735253802931796,
+  "accuracy": 0.9115969581749049,
+  "precision_macro": 0.9127866371784426,
+  "recall_macro": 0.9106906972115159,
+  "f1_macro": 0.9112987235524028,
+  "roc_auc": 0.9548703472486112,
+  "mcc": 0.8234746670600417
+}

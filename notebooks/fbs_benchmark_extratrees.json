@@ -1,0 +1,12 @@
+{
+  "model": "Extra Trees",
+  "train_time_sec": 0.6236997429987241,
+  "inference_batch_sec": 0.06864877900079591,
+  "inference_ms_per_sample": 0.06525549334676417,
+  "accuracy": 0.8963878326996197,
+  "precision_macro": 0.8965500993142244,
+  "recall_macro": 0.895943036027722,
+  "f1_macro": 0.8961806074269236,
+  "roc_auc": 0.9502126196551038,
+  "mcc": 0.7924929028314858
+}
