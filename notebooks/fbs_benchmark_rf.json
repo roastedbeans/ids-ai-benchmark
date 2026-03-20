@@ -1,12 +1,12 @@
 {
   "model": "Random Forest",
-  "train_time_sec": 0.2092560559995036,
-  "inference_batch_sec": 0.042853487000684254,
-  "inference_ms_per_sample": 0.040735253802931796,
-  "accuracy": 0.9115969581749049,
-  "precision_macro": 0.9127866371784426,
-  "recall_macro": 0.9106906972115159,
-  "f1_macro": 0.9112987235524028,
-  "roc_auc": 0.9548703472486112,
-  "mcc": 0.8234746670600417
+  "train_time_sec": 0.23211212799651548,
+  "inference_batch_sec": 0.03453076700679958,
+  "inference_ms_per_sample": 0.023331599328918633,
+  "accuracy": 0.9148648648648648,
+  "precision_macro": 0.9166758392955421,
+  "recall_macro": 0.9147765871189709,
+  "f1_macro": 0.9147596375364767,
+  "roc_auc": 0.9620897522991403,
+  "mcc": 0.8314502572203287
 }

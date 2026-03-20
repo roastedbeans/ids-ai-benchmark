@@ -1,12 +1,12 @@
 {
   "model": "MLP",
-  "train_time_sec": 12.759520023000732,
-  "inference_batch_sec": 0.007119647998479195,
-  "inference_ms_per_sample": 0.006767726234295813,
-  "accuracy": 0.8954372623574145,
-  "precision_macro": 0.898155632033413,
-  "recall_macro": 0.8939941733166856,
-  "f1_macro": 0.8948886757353796,
-  "roc_auc": 0.9475055643016123,
-  "mcc": 0.7921388744264153
+  "train_time_sec": 46.044239445996936,
+  "inference_batch_sec": 0.1157182300084969,
+  "inference_ms_per_sample": 0.07818799324898439,
+  "accuracy": 0.9114864864864864,
+  "precision_macro": 0.9147642010565059,
+  "recall_macro": 0.9113671392778617,
+  "f1_macro": 0.911293676586115,
+  "roc_auc": 0.9560497154836777,
+  "mcc": 0.8261243559258684
 }

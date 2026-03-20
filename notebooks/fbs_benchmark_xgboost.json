@@ -1,12 +1,12 @@
 {
   "model": "XGBoost",
-  "train_time_sec": 1.258325127999342,
-  "inference_batch_sec": 0.021781229001135216,
-  "inference_ms_per_sample": 0.020704590305261613,
-  "accuracy": 0.908745247148289,
-  "precision_macro": 0.9092228588431239,
-  "recall_macro": 0.9081446899372094,
-  "f1_macro": 0.9085217391304348,
-  "roc_auc": 0.9518411957367499,
-  "mcc": 0.8173668376873269
+  "train_time_sec": 0.6388011909875786,
+  "inference_batch_sec": 0.020868159001111053,
+  "inference_ms_per_sample": 0.014100107433183144,
+  "accuracy": 0.9141891891891892,
+  "precision_macro": 0.9147732364716448,
+  "recall_macro": 0.9141392559478156,
+  "f1_macro": 0.91415152465997,
+  "roc_auc": 0.9574248168357694,
+  "mcc": 0.8289122499744693
 }

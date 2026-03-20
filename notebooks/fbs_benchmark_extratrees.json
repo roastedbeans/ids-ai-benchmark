@@ -1,12 +1,12 @@
 {
   "model": "Extra Trees",
-  "train_time_sec": 0.6236997429987241,
-  "inference_batch_sec": 0.06864877900079591,
-  "inference_ms_per_sample": 0.06525549334676417,
-  "accuracy": 0.8963878326996197,
-  "precision_macro": 0.8965500993142244,
-  "recall_macro": 0.895943036027722,
-  "f1_macro": 0.8961806074269236,
-  "roc_auc": 0.9502126196551038,
-  "mcc": 0.7924929028314858
+  "train_time_sec": 0.9944013859931147,
+  "inference_batch_sec": 0.08124699100153521,
+  "inference_ms_per_sample": 0.05489661554157784,
+  "accuracy": 0.9101351351351351,
+  "precision_macro": 0.9115749438665628,
+  "recall_macro": 0.9100559536592671,
+  "f1_macro": 0.9100444156840056,
+  "roc_auc": 0.9535533495496681,
+  "mcc": 0.8216294934079781
 }

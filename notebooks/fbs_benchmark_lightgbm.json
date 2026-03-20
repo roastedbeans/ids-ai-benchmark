@@ -1,12 +1,12 @@
 {
   "model": "LightGBM",
-  "train_time_sec": 0.23817724999935308,
-  "inference_batch_sec": 0.002524169000025722,
-  "inference_ms_per_sample": 0.002399400190138519,
-  "accuracy": 0.9096958174904943,
-  "precision_macro": 0.909804347826087,
-  "recall_macro": 0.9093371695347701,
-  "f1_macro": 0.9095302798369481,
-  "roc_auc": 0.9567269239816876,
-  "mcc": 0.819141384138716
+  "train_time_sec": 1.6118082569882972,
+  "inference_batch_sec": 0.011321616009809077,
+  "inference_ms_per_sample": 0.0076497405471682945,
+  "accuracy": 0.9155405405405406,
+  "precision_macro": 0.9165142586195218,
+  "recall_macro": 0.915476007859809,
+  "f1_macro": 0.9154818516692791,
+  "roc_auc": 0.9586300849531407,
+  "mcc": 0.8319896186562112
 }
